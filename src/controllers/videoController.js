@@ -1,5 +1,10 @@
+const fakeUser = {
+  username: "Dabin",
+  loggedIn: true,
+};
+
 export const trendig = (req, res) =>
-  res.render("home", { pageTitle: "Comes from your controller" });
+  res.render("home", { pageTitle: "Home", fakeUser });
 export const see = (req, res) =>
   res.render("watch", { pageTitle: "Watch Video" });
 export const edit = (req, res) =>
