@@ -1,6 +1,6 @@
 extends base
 
 block content 
-    from(method="POST")
-        input(placeholder="Title", require, type="text")
+    form(method="POST", action="/videos/upload")
+        input(placeholder="Title", require, type="text" name="title")
         input(type="submit", value="Upload Video")
