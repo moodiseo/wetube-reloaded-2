@@ -1,6 +1,8 @@
 extends base
 
 block content 
-    form(method="POST", action="/videos/upload")
+    form(method="POST")
         input(placeholder="Title", require, type="text" name="title")
+        input(placeholder="Description", require, type="text" name="description")
+        input(placeholder="Hashtags, separated by comma.", require, type="text" name="hashtags")
         input(type="submit", value="Upload Video")
